@@ -33,7 +33,7 @@ return[
     'deca_7.nombre' => 'Isabel Arango',
     'deca_7.cargo' => 'Diagramaci&oacute;n e identidad visual del equipo',
 
-    'deca_8.nombre' => 'Mar&iacute;a Andrea Gonz&aacutelez',
+    'deca_8.nombre' => 'Mar&iacute;a Andrea Gonz&aacute;lez',
     'deca_8.cargo' => 'Audiovisuales y Gr&aacute;fica',
 
     'deca_9.nombre' => 'Andrea Peralta',

@@ -48,6 +48,7 @@
 
         </div>
     </div>
+    <a><img src="{{asset('images/col_flag.png')}}"></a>
 </div>
 
 <!-- Scripts -->
