@@ -61,9 +61,10 @@ body{
 }
 
 #footer{
-    padding: 2em 2em 1em 2em;
+    padding: 1em 2em 2em 2em;
     background: url(../images/Footer.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    position: static;
 }
 
 .carousel .backward:before, .carousel .forward:before{
@@ -259,4 +260,8 @@ article.special{
 
 .green-circle i {
     margin-top: 23px;
+}
+
+#header{
+    background: url(../images/header.jpg) no-repeat;
 }

@@ -6,6 +6,55 @@
 
 (function($) {
 
+    // Setup variables
+    var $window = $(window);
+    var $slide = $('.homeSlide');
+    var $slideTall = $('.homeSlideTall');
+    var $slideTall2 = $('.homeSlideTall2');
+    var $body = $('body');
+
+    //FadeIn all sections
+    $body.imagesLoaded( function() {
+        setTimeout(function() {
+
+            // Resize sections
+            adjustWindow();
+
+            // Fade in sections
+            $body.removeClass('loading').addClass('loaded');
+
+        }, 800);
+    });
+
+    function adjustWindow(){
+
+        // Init Skrollr
+        var s = skrollr.init({
+            render: function(data) {
+
+                //Debugging - Log the current scroll position.
+                console.log(data.curTop);
+            }
+        });
+
+        // Get window size
+        var winH = $window.height();
+
+        // Keep minimum height 550
+        if(winH <= 550) {
+            winH = 550;
+        }
+
+        // Resize our slides
+        $slide.height(winH);
+        $slideTall.height(winH*2);
+        $slideTall2.height(winH*3);
+
+        // Refresh Skrollr after resizing our sections
+        s.refresh($('.homeSlide'));
+
+    }
+
 	var settings = {
 
 		// Carousels
@@ -13,9 +62,11 @@
 				speed: 4,
 				fadeIn: true,
 				fadeDelay: 250
-			},
+			}
 
 	};
+
+
 
 	skel.breakpoints({
 		wide: '(max-width: 1680px)',
@@ -29,6 +80,8 @@
 
 		var	$window = $(window),
 			$body = $('body');
+
+
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');

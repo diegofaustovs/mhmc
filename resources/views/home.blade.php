@@ -5,11 +5,15 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <div id="header">
+        <div id="header" data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -200px;"
+             data-anchor-target="#header">
 
             <!-- Inner -->
-            <div class="inner">
-                <image class="logo" src="../images/logohome.png"></image>
+            <div class="inner" data-center="opacity: 1"
+                 data-20-top="opacity: 0"
+                 data-anchor-target="#logoImg">
+                <image id="logoImg" class="logo" src="../images/logohome.png"></image>
                 <footer>
                     <a href="#banner"><i class="logo fa fa-angle-down fa-5x"></i></a>
                 </footer>
@@ -21,11 +25,11 @@
 
         </div>
 
-        <section id="banner" class="banner">
+        <section  id="banner" class="banner">
             <header>
                 <div class="contenido container special">
                     <div class="youtube-container">
-                        <div class="youtube-player" data-id="UeudLPSdpdA"></div>
+                        <div class="youtube-player" data-id="Us6N7FllxT8"></div>
                     </div>
                     {{--<div class="youtube-container">--}}
                     {{--<div class="youtube-player" data-id="PUtkGRQzXVs"></div>--}}
