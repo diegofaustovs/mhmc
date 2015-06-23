@@ -15,7 +15,7 @@ Route::get('/news', ['as'=>'news', 'uses'=>'NewsController@showAllNews']);
 Route::get('/press', ['as'=>'press', 'uses'=>'NewsController@showAllPress']);
 Route::get('/solar_press', ['as'=>'solar_press', 'uses'=>'NewsController@showAllSolarPress']);
 
-Route::get('/', 'StaticController@index');
+Route::get('/', ['as'=>'index', 'uses'=>'StaticController@index']);
 
 /*
  * Teams
@@ -46,4 +46,3 @@ Route::get('/solarInfo',['as'=>'solarInfo', 'uses'=>'StaticController@solarInfo'
 Route::get('/contests',['as'=>'contests', 'uses'=>'StaticController@contests']);
 
 //Route::get('home', 'HomeController@index');
-

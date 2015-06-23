@@ -265,3 +265,7 @@ article.special{
 #header{
     background: url(../images/header.jpg) no-repeat;
 }
+
+.lang_picker{
+    width: 1.5em;
+}
