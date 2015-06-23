@@ -48,7 +48,32 @@
 
         </div>
     </div>
-    <a><img src="{{asset('images/col_flag.png')}}"></a>
+
+    <script>
+        function changeLang(lang)
+        {
+            url = window.location.href;
+            aux = url.split('/');
+            str = "http://mhmc/";
+
+            if (aux[3] != lang)
+            {
+                for (i = 3; i < aux.length; i++) {
+                    if (aux[i] != 'en' && aux[i] != 'es') {
+                        str = str + aux[i];
+                    }
+
+                    else {
+                        str += (aux[i] == 'en' ? 'es/' : 'en/');
+                    }
+                }
+                window.location = str;
+            }
+        }
+    </script>
+
+    <a onclick="changeLang('es')"><img class="lang_picker" src="{{asset('images/col_flag.png')}}" alt="spanish"></a> /
+    <a onclick="changeLang('en')"><img class="lang_picker" src="{{asset('images/uk_flag.png')}}" alt="english"></a>
 </div>
 
 <!-- Scripts -->

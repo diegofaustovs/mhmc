@@ -263,6 +263,10 @@ article.special{
     background: url(../images/header.jpg) no-repeat;
 }
 
+.lang_picker{
+    width: 1.5em;
+}
+
 #banner, #banner .contenido.container.special{
     margin: 0;
     padding: 0;
