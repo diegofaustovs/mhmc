@@ -25,21 +25,22 @@
 
         </div>
 
-        <section  id="banner" class="banner">
-            <header>
-                <div class="contenido container special">
-                    <div class="youtube-container">
+        <section id="banner" class="banner">
+                <div class="contenido container special" style="background-color: #000000">
+                    <div class="youtube-container" data-center="opacity: 0;"
+                         data-top-bottom="opacity: 1;"
+                         data-anchor-target="#header">
                         <div class="youtube-player" data-id="Us6N7FllxT8"></div>
                     </div>
+
                     {{--<div class="youtube-container">--}}
                     {{--<div class="youtube-player" data-id="PUtkGRQzXVs"></div>--}}
                     {{--</div>--}}
 
                 </div>
-            </header>
         </section>
 
-        <section id="what" class="wrapper style1">
+        <section id="infohome" class="wrapper style1">
             <div class="contenido container special">
                 <header>
                     <h2 class="titulo">{{Lang::get('home.whatTitle')}}</h2>
@@ -52,7 +53,7 @@
             </div>
         </section>
 
-        <section id="who" class="wrapper style1">
+        <section id="infohome" class="wrapper style1">
             <div class="contenido container special">
                 <header>
                     <h2 class="titulo">{{Lang::get('home.whoTitle')}}</h2>
@@ -90,12 +91,12 @@
             })();
 
             function labnolThumb(id) {
-                return '<img class="youtube-thumb" src="http://img.youtube.com/vi/'+ id +'/0.jpg"><div class="play-button"></div>';
+                return '<img class="youtube-thumb" src="http://img.youtube.com/vi/'+ id +'/maxresdefault.jpg"><div class="play-button"></div>';
             }
 
             function labnolIframe() {
                 var iframe = document.createElement("iframe");
-                iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+                iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?vq=hd720&autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
                 iframe.setAttribute("frameborder", "0");
                 iframe.setAttribute("id", "youtube-iframe");
                 this.parentNode.replaceChild(iframe, this);
