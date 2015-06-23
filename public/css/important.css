@@ -21,8 +21,10 @@ body{
     color: #fff;
     height: 88px;
     padding: 2em 0 1.5em 0;
-    background: rgba(11, 11, 11, 0) url(./images/Navbar.png) no-repeat;
+    background-image: url(./images/Navbar.png);
+    background-repeat: no-repeat;
     background-size: 100%;
+    z-index: 20;
 }
 
 #nav ul{
@@ -229,13 +231,6 @@ article.special{
     margin-right: 9%;
 }
 
-
-#infohome{
-    /*background-image: url(../images/who.jpg) !important;*/
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: #000;
-}
 /*
 #what{
     background-image: url(../images/what.jpg);
@@ -274,10 +269,49 @@ article.special{
     background-color: #000;
 }
 
-#infohome, #infohome .titulo{
+#infowhat, #infowhat .titulo{
     color: #fff;
 }
 
-section #infohome .wrapper.style1{
-    background-color: rgb(0,0,0);
+iframe #facebook a{
+    color: #1A7E45 !important;
+}
+
+#infowhat{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0;
+}
+
+.infowhat1{
+    background-image: url(../images/16-2.jpg);
+    z-index:2;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.infowhat2{
+    background-image: url(../images/16.jpg);
+    position: absolute;
+    z-index:3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+#infowhat3{
+    margin-top: 0;
+    z-index: 4;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#infowhat3 header h2.titulo{
+    margin-top: 20% !important;
 }

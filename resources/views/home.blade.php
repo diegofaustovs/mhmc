@@ -25,11 +25,17 @@
 
         </div>
 
-        <section id="infohome" class="wrapper style1" data-center="background-image: url(../images/who.jpg);"
-                 data-top-bottom="background-image: url(../images/whob.jpeg);"
-                 data-anchor-target="#header">
-            <div class="contenido container special" data-center="opacity: 0;"
-                 data-top-bottom="opacity: 1;"
+        <section id="infowhat" class="wrapper style1">
+            <div class="infowhat1" data-center="opacity: 1;"
+                 data-50p-top="opacity: 0;"
+                 data-anchor-target="#infowhat">
+            </div>
+            <div class="infowhat2"  data-center="opacity: 0; "
+                 data-50p-top="opacity: 1;"
+                 data-anchor-target="#infowhat">
+            </div>
+            <div id="infowhat3" class="contenido container special" data-center="opacity: 0; top:80%"
+                 data-top-bottom="opacity: 1; top:110%"
                  data-anchor-target="#header">
                 <header>
                     <h2 class="titulo">{{Lang::get('home.whatTitle')}}</h2>
@@ -37,12 +43,10 @@
                 <p style="text-align: center">
                     {{Lang::get('home.what')}}
                 </p>
-                <footer>
-                </footer>
             </div>
         </section>
 
-        <section id="infohome" class="wrapper style1">
+        <section id="infowho" class="wrapper style1">
             <div class="contenido container special">
                 <header>
                     <h2 class="titulo">{{Lang::get('home.whoTitle')}}</h2>
