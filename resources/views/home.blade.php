@@ -25,23 +25,12 @@
 
         </div>
 
-        <section id="banner" class="banner">
-                <div class="contenido container special" style="background-color: #000000">
-                    <div class="youtube-container" data-center="opacity: 0;"
-                         data-top-bottom="opacity: 1;"
-                         data-anchor-target="#header">
-                        <div class="youtube-player" data-id="Us6N7FllxT8"></div>
-                    </div>
-
-                    {{--<div class="youtube-container">--}}
-                    {{--<div class="youtube-player" data-id="PUtkGRQzXVs"></div>--}}
-                    {{--</div>--}}
-
-                </div>
-        </section>
-
-        <section id="infohome" class="wrapper style1">
-            <div class="contenido container special">
+        <section id="infohome" class="wrapper style1" data-center="background-image: url(../images/who.jpg);"
+                 data-top-bottom="background-image: url(../images/whob.jpeg);"
+                 data-anchor-target="#header">
+            <div class="contenido container special" data-center="opacity: 0;"
+                 data-top-bottom="opacity: 1;"
+                 data-anchor-target="#header">
                 <header>
                     <h2 class="titulo">{{Lang::get('home.whatTitle')}}</h2>
                 </header>
@@ -66,6 +55,20 @@
             </div>
         </section>
 
+        <section id="banner" class="banner">
+            <div class="contenido container special">
+                <div class="youtube-container" data-center="opacity: 0;"
+                     data-top-bottom="opacity: 1;"
+                     data-anchor-target="#header">
+                    <div class="youtube-player" data-id="Us6N7FllxT8"></div>
+                </div>
+
+                {{--<div class="youtube-container">--}}
+                {{--<div class="youtube-player" data-id="PUtkGRQzXVs"></div>--}}
+                {{--</div>--}}
+
+            </div>
+        </section>
 
         <section id="sociales" class="home wrapper style1">
             <div id="redes">
