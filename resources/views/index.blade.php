@@ -72,8 +72,8 @@
         }
     </script>
 
-    <a onclick="changeLang('es')"><img class="lang_picker" src="{{asset('images/col_flag.png')}}"></a> /
-    <a onclick="changeLang('en')"><img class="lang_picker" src="{{asset('images/uk_flag.png')}}"></a>
+    <a onclick="changeLang('es')"><img class="lang_picker" src="{{asset('images/col_flag.png')}}" alt="spanish"></a> /
+    <a onclick="changeLang('en')"><img class="lang_picker" src="{{asset('images/uk_flag.png')}}" alt="english"></a>
 </div>
 
 <!-- Scripts -->

@@ -15,8 +15,8 @@
                     <h2>{{Lang::get('solar_decathlon.about_competition')}}</h2>
                 </div>
                 <div class="contenido">
-                    <div id="">
-                        <p>{!!Lang::get('solar_decathlon.competition')!!}</p>
+                    <div>
+                        <p>{!!Lang::get('solar_decathlon.competition')!!}
                     </div>
                 </div>
                 <div class="contenido">
