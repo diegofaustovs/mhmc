@@ -319,3 +319,8 @@ iframe #facebook a{
 #infowhat3 header h2.titulo{
     margin-top: 20% !important;
 }
+
+.carousel-img{
+    height: 20em;
+    overflow: hidden;
+}

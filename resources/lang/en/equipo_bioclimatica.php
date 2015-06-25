@@ -44,6 +44,8 @@ return [
     'deca_8.cargo' => 'Microclimate and thermal comfort',
     'deca_8.foto' => '',
 
-    'nintegrantes' => '8'
+    'nintegrantes' => '8',
+
+    'foto_1' => '',
 
 ];

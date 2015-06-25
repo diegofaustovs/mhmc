@@ -17,19 +17,19 @@
                 <div class="reel">
 
                     <article>
-                        <img src="images/gestion02.JPG" alt=""/>
+                        <img class="carousel-img" src="{{asset('images/JuntaACM.png')}}" alt=""/>
                     </article>
 
                     <article>
-                        <img src="images/gestion02.JPG" alt=""/>
+                        <img class="carousel-img" src="https://farm4.staticflickr.com/3734/18923752810_84cea66a72_o_d.jpg" alt=""/>
                     </article>
 
                     <article>
-                        <img src="images/gestion02.JPG" alt=""/>
+                        <img class="carousel-img" src="https://farm1.staticflickr.com/419/19016968655_2f7d92fc4c_o_d.jpg" alt=""/>
                     </article>
 
                     <article>
-                        <img src="images/gestion02.JPG" alt=""/>
+                        <img class="carousel-img" src="https://farm4.staticflickr.com/3936/18252656733_58b94f9804_o_d.jpg" alt=""/>
                     </article>
 
                     <article>
