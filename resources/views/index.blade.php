@@ -40,6 +40,11 @@
                     </ul>
                 </div>
 
+                <div class="copyright">
+
+                        <image src="images/andes.png"></image>
+                </div>
+
                 <!-- Copyright -->
                 <div class="copyright">
                     <ul class="menu">

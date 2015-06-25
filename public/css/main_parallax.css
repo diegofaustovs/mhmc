@@ -92,7 +92,6 @@ main {
         margin-bottom: 2em;
     }
     .hsContent p {
-        width: 80%;
         color: #fff;
     }
 	.hsContent a {
@@ -130,10 +129,23 @@ main {
 
     /* Slide 5 */
     #slide-5 .bcg {background-image:url('../images/what.jpg')}
-    #slide-5 .hsContent {}
+    #slide-5 .hsContent {
+        margin-top: 0;
+    }
     #slide-5 h2 {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    #fb{
+        max-height: 200px;
+    }
+
+    .twitter-timeline{
+        max-height: 200px;
+    }
+    .youtube-player {
+        padding-bottom: 50%;
     }
 
 /* ==========================================================================
@@ -306,6 +318,18 @@ main {
         top: 20%;
         left: 50%;
         margin-left: -17em;
+    }
+
+    #fb{
+        max-height: 400px;
+    }
+
+    .twitter-timeline{
+        max-height: 400px;
+    }
+
+    .youtube-player {
+        padding-bottom: 0%;
     }
 
 }

@@ -133,15 +133,13 @@
         </section>
 
         <section id="slide-4" class="homeSlide">
-            <div class="bcg"
-                 data-center="background-position: 50% 0%;"
-                 data-top-bottom="background-position: 50% -25%;"
-                 data-bottom-top="background-position: 50% 25%;"
-                 data-anchor-target="#slide-4"
-                    >
+            <div class="bcg">
                 <div class="hsContainer">
                     <div class="hsContent">
-                        <div class="youtube-player" data-id="Us6N7FllxT8"></div>
+                        <div class="youtube-player" data-id="Us6N7FllxT8" data-center="opacity: 1;"
+                             data-top-bottom="opacity: 0"
+                             data-bottom-top="opacity: 0.5"
+                             data-anchor-target="#slide-4"></div>
                         </div>
                     </div>
                 </div>
@@ -153,14 +151,14 @@
                 <div class="bcg"
                      data-center="background-position: 50% 0%;"
                      data-top-bottom="background-position: 50% -25%;"
-                     data-bottom-top="background-position: 50% 25%;"
+                     data-bottom-top="background-position: 50% 60%;"
                      data-anchor-target="#slide-4"
                         >
                     <div class="hsContainer">
-                        <div class="hsContent">
+                        <div id="redes" class="hsContent">
                                 <h2 class="titulo">Redes Sociales</h2>
-                                <a class="twitter-timeline" href="https://twitter.com/solarduniandes" data-widget-id="611942708815527940">Tweets {{Lang::get('home.by')}} @solarduniandes</a>
-                                <div class="fb-page" data-href="https://www.facebook.com/mashuertomascasa" data-width="510px" data-height="605px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/mashuertomascasa"><a href="https://www.facebook.com/mashuertomascasa">Solar Decathlon Uniandes 2015:   Más Huerto, Más Casa.</a></blockquote></div></div>
+                                <a class="twitter-timeline" href="https://twitter.com/solarduniandes" data-widget-id="611942708815527940" width="400px" height="350px">Tweets {{Lang::get('home.by')}} @solarduniandes</a>
+                                <div id="fb" class="fb-page" data-href="https://www.facebook.com/mashuertomascasa" data-width="400px" data-height="350px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/mashuertomascasa"><a href="https://www.facebook.com/mashuertomascasa">Solar Decathlon Uniandes 2015:   Más Huerto, Más Casa.</a></blockquote></div></div>
                         </div>
                     </div>
 
@@ -225,6 +223,4 @@
                 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-
-        {{--</div>--}}
 @endsection

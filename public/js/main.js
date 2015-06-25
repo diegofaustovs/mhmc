@@ -38,11 +38,15 @@
             winH = 550;
         }
 
+
         if( winW >= 736) {
 
             // Init Skrollr
             var s = skrollr.init({
-                forceHeight: false
+                forceHeight: false,
+                keyframe: function(element, name, direction) {
+                    $(element).trigger(name, [direction]);
+                }
             });
 
             // Resize our slides
@@ -50,11 +54,14 @@
 
             s.refresh($('.homeSlide'));
 
+
         } else {
 
             // Init Skrollr
             var s = skrollr.init();
             s.destroy();
+
+
         }
 
         if(Modernizr.touch) {

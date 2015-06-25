@@ -136,13 +136,15 @@ h4 {
 }
 
 .youtube-container { display: block; margin: 0px auto; width: 100%;}
-.youtube-player { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 50%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
+.youtube-player { display: block; width: 100%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
 img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
 div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("http://i.imgur.com/TxzC70f.png") no-repeat; }
 #youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 
 .logo{
     opacity: 1;
+    max-width: 100%;
+    height: auto;
 }
 
 .video-wrapper {
@@ -301,4 +303,30 @@ section.homeSlide{
 .carousel-img{
     height: 20em;
     overflow: hidden;
+}
+
+#fb{
+    opacity: 0.9;
+    max-height: 400px;
+    top: -5px;
+}
+.twitter-timeline{
+    opacity: 0.9;
+    top: 0%;
+}
+
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 100% !important;
+}
+
+.logoAndes{
+    width: 8em;
+    height: 8em;
+    left: 50%;
+}
+
+.picAndes{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
