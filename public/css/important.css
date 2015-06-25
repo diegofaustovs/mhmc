@@ -297,3 +297,8 @@ iframe #facebook a{
 section.homeSlide{
     margin-bottom: 0;
 }
+
+.carousel-img{
+    height: 20em;
+    overflow: hidden;
+}
