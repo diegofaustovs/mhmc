@@ -14,9 +14,12 @@
     <!--[if lte IE 8]><script src="{{ asset('/css/ie/html5shiv.js') }}"></script><![endif]-->
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.css')  }}" />
     <link rel="stylesheet" href="{{ asset('/css/main.css')  }}" />
+    <link rel="stylesheet" href="{{ asset('/css/normalize.css')  }}" />
+    <link rel="stylesheet" href="{{ asset('/css/main_parallax.css')  }}" />
     <!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('/css/ie8.css') }}" /><![endif]-->
     <link rel="stylesheet" href="{{ asset('/css/important.css')  }}" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900%7CYanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+    <script src="{{ asset('/js/modernizr-2.7.1.min.js') }}"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300%7CYanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 </head>
 @yield('content')
 
@@ -27,7 +30,7 @@
             <div class="12u">
 
                 <!-- Contact -->
-                <section class="contact">
+                <div class="contact">
 
                     <ul class="icons">
                         <li><a href="https://twitter.com/solarduniandes" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -35,7 +38,7 @@
                         <li><a href="https://instagram.com/solarduniandes/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
                         <li><a href="https://plus.google.com/100836447939892247873/" target="_blank" class="icon fa-google-plus"><span class="label">Google +</span></a></li>
                     </ul>
-                </section>
+                </div>
 
                 <!-- Copyright -->
                 <div class="copyright">
@@ -85,8 +88,10 @@
 <script src="{{ asset('/js/util.js') }}"></script>
 <!--[if lte IE 8]><script src="{{ asset('/js/ie/respond.min.js') }}"></script><![endif]-->
 <script src="{{ asset('/js/imagesloaded.js') }}"></script>
+<script src="{{ asset('/js/enquire.min.js') }}"></script>
 <script src="{{ asset('/js/skrollr.js') }}"></script>
 <script src="{{ asset('/js/main.js') }}"></script>
+
 
 </body>
 </html>

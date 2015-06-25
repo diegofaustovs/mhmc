@@ -6,12 +6,12 @@
     <div id="page-wrapper">
 
 
-        <div id="header">
+        <div class="header">
             @include('header')
         </div>
         <div class="wrapper style1">
             <section class="container special">
-                <div id="titulo">
+                <div class="titulo">
                     <h2>{{Lang::get('solar_decathlon.about_competition')}}</h2>
                 </div>
                 <div class="contenido">

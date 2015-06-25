@@ -7,36 +7,51 @@
     <div id="page-wrapper">
 
 
-        <div id="header">
+        <div class="header">
             @include('header')
         </div>
         <div class="wrapper style1">
-            <div id="titulo">
+            <div class="titulo">
                 <h2>{{Lang::get('equipo_gestion.equipo')}}</h2>
             </div>
             <section class="carousel">
                 <div class="reel">
-
                     <article>
-                        <img src="images/gestion01.JPG" alt=""/>
+                        <img src="images/gestion02.JPG" alt=""/>
                     </article>
 
                     <article>
-                        <img src="images/gestion01.JPG" alt=""/>
+                        <img src="images/gestion02.JPG" alt=""/>
                     </article>
 
                     <article>
-                        <img src="images/gestion01.JPG" alt=""/>
+                        <img src="images/gestion02.JPG" alt=""/>
+                    </article>
+
+                    <article>
+                        <img src="images/gestion02.JPG" alt=""/>
+                    </article>
+
+                    <article>
+                        <img src="images/gestion02.JPG" alt=""/>
+                    </article>
+
+                    <article>
+                        <img src="images/gestion02.JPG" alt=""/>
+                    </article>
+
+                    <article>
+                        <img src="images/gestion02.JPG" alt=""/>
                     </article>
                 </div>
             </section>
             <section class="container">
                 <div class="contenido">
-                    <div id="">
+                    <div>
                         <p>{{Lang::get('equipo_gestion.motivacion')}}</p>
                     </div>
 
-                    <div id="titulo">
+                    <div class="titulo">
                         <h2>{{Lang::get('miscellaneous.miembros_equipo')}}</h2>
                     </div>
 

@@ -10,7 +10,7 @@
     <div id="page-wrapper">
 
 
-        <div id="header">
+        <div class="header">
             @include('header')
         </div>
         <!-- Features -->
