@@ -3,7 +3,7 @@
 @section('content')
     {{--<body class="homepage">--}}
     {{--<div id="page-wrapper">--}}
-        <body>
+        <body class="loading">
 
         <div id="preload">
             <img src="images/header.jpg">
@@ -72,14 +72,18 @@
 
         <section id="slide-1" class="homeSlide">
             <div class="bcg"
-                 data-center="background-position: 50% 0px;"
-                 data-top-bottom="background-position: 50% -100px;"
+                 data-center="background-position: 50% 0%;"
+                 data-top-bottom="background-position: 50% -25%;"
                  data-anchor-target="#slide-1"
                     >
                 <div class="hsContainer">
                     <div class="hsContent" data-center="opacity: 1" data-top="opacity: 0" data-anchor-target="#logoImg">
-                        <image id="logoImg" class="logo" src="../images/logohome.png"></image>
-                        <i class="logo fa fa-angle-down fa-5x"></i>
+                        <div class="logoImg">
+                            <image id="logoImg" class="logo" src="../images/logohome4.png"></image>
+                        </div>
+                        <div class="flecha" style="left: 50%;">
+                            <i class="logo fa fa-angle-down fa-5x" style="color:#fff"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,19 +91,20 @@
 
         <section id="slide-2" class="homeSlide">
             <div class="bcg"
-                 data-center="background-position: 50% 10px;"
-                 data-top-bottom="background-position: 50% -100px;"
-                 data-bottom-top="background-position: 50% 100px;"
+                 data-center="background-position: 50% 5%;"
+                 data-top-bottom="background-position: 50% -25%;"
+                 data-bottom-top="background-position: 50% 25%;"
                  data-anchor-target="#slide-2"
                     >
                 <div class="hsContainer">
-                    <div class="hsContent"
-                         data-center="opacity: 1"
-                         data-center-top="opacity: 0"
-                         data--100-bottom="opacity: 0;"
-                         data-anchor-target="#slide-2"
-                            >
-                        <h2>that is also responsive.</h2>
+                    <div class="hsContent" data-center="opacity: 1" data-center-top="opacity: 0" data--100-bottom="opacity: 0;" data-anchor-target="#slide-2">
+                        {{--<h2 class="titulo">{{Lang::get('home.whatTitle')}}</h2>--}}
+                        <div class="s2">
+                            <h2 class="titulo">{{Lang::get('home.whatTitle')}}</h2>
+                            <p style="text-align: center">
+                            {{Lang::get('home.what')}}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,20 +112,20 @@
 
         <section id="slide-3" class="homeSlide">
             <div class="bcg"
-                 data-center="background-position: 50% 0px;"
-                 data-top-bottom="background-position: 50% -100px;"
-                 data-bottom-top="background-position: 50% 100px;"
+                 data-center="background-position: 50% 0%;"
+                 data-top-bottom="background-position: 50% -25%;"
+                 data-bottom-top="background-position: 50% 25%;"
                  data-anchor-target="#slide-3"
                     >
                 <div class="hsContainer">
-                    <div class="hsContent"
-                         data--50-bottom="opacity: 0;"
-                         data--200-bottom="opacity: 1;"
-                         data-center="opacity: 1"
-                         data-200-top="opacity: 0"
-                         data-anchor-target="#slide-3 h2"
-                            >
-                        <h2>Turn Skrollr.js off for mobile devices</h2>
+                    <div class="hsContent" data-center="opacity: 1" data-center-top="opacity: 0" data--100-bottom="opacity: 0;" data-anchor-target="#slide-3">
+                        {{--<h2 class="titulo">{{Lang::get('home.whatTitle')}}</h2>--}}
+                        <div class="s2">
+                            <h2 class="titulo">{{Lang::get('home.whoTitle')}}</h2>
+                            <p style="text-align: center">
+                                {{Lang::get('home.who')}}
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -129,24 +134,38 @@
 
         <section id="slide-4" class="homeSlide">
             <div class="bcg"
-                 data-center="background-position: 50% 0px;"
-                 data-top-bottom="background-position: 50% -100px;"
-                 data-bottom-top="background-position: 50% 100px;"
+                 data-center="background-position: 50% 0%;"
+                 data-top-bottom="background-position: 50% -25%;"
+                 data-bottom-top="background-position: 50% 25%;"
                  data-anchor-target="#slide-4"
                     >
                 <div class="hsContainer">
-                    <div class="hsContent"
-                         data-bottom-top="opacity: 0"
-                         data-25p-top="opacity: 0"
-                         data-top="opacity: 1"
-                         data-anchor-target="#slide-4"
-                            >
-                        <h2>using enquire.js.</h2>
+                    <div class="hsContent">
+                        <div class="youtube-player" data-id="Us6N7FllxT8"></div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
+
+            <section id="slide-5" class="homeSlide">
+                <div class="bcg"
+                     data-center="background-position: 50% 0%;"
+                     data-top-bottom="background-position: 50% -25%;"
+                     data-bottom-top="background-position: 50% 25%;"
+                     data-anchor-target="#slide-4"
+                        >
+                    <div class="hsContainer">
+                        <div class="hsContent">
+                                <h2 class="titulo">Redes Sociales</h2>
+                                <a class="twitter-timeline" href="https://twitter.com/solarduniandes" data-widget-id="611942708815527940">Tweets {{Lang::get('home.by')}} @solarduniandes</a>
+                                <div class="fb-page" data-href="https://www.facebook.com/mashuertomascasa" data-width="510px" data-height="605px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/mashuertomascasa"><a href="https://www.facebook.com/mashuertomascasa">Solar Decathlon Uniandes 2015:   Más Huerto, Más Casa.</a></blockquote></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
             </main>
 
         {{--<section id="banner" class="banner">--}}
@@ -206,5 +225,6 @@
                 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-    {{--</div>--}}
+
+        {{--</div>--}}
 @endsection

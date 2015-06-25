@@ -81,6 +81,7 @@
 
 <!-- Scripts -->
 <script src="{{ asset('/js/jquery.min.js') }}"></script>
+<script src="{{ asset('/js/jquery-1.9.1.min.js') }}"></script>
 <script src="{{ asset('/js/jquery.dropotron.min.js') }}"></script>
 <script src="{{ asset('/js/jquery.scrolly.min.js') }}"></script>
 <script src="{{ asset('/js/jquery.onvisible.min.js') }}"></script>

@@ -9,8 +9,6 @@
     // Setup variables
     var $window = $(window);
     var $slide = $('.homeSlide');
-    var $slideTall = $('.homeSlideTall');
-    var $slideTall2 = $('.homeSlideTall2');
     var $body = $('body');
 
     //FadeIn all sections
@@ -40,7 +38,7 @@
             winH = 550;
         }
 
-        if( winW >= 768) {
+        if( winW >= 736) {
 
             // Init Skrollr
             var s = skrollr.init({
@@ -62,23 +60,15 @@
         if(Modernizr.touch) {
 
             // Init Skrollr
-            var s = skrollr.init({
-                render: function(data) {
-
-                    //Debugging - Log the current scroll position.
-                    console.log(data.curTop);
-                }
-            });
+            var s = skrollr.init();
             s.destroy();
         }
 
         // Resize our slides
         $slide.height(winH);
-        $slideTall.height(winH*2);
-        $slideTall2.height(winH*3);
 
-        // Refresh Skrollr after resizing our sections
-        s.refresh($('.homeSlide'));
+        //// Refresh Skrollr after resizing our sections
+        //s.refresh($('.homeSlide'));
 
     }
 
@@ -93,7 +83,7 @@
         };
     }
 
-    enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
+    enquire.register("screen and (min-width : 736px)", initAdjustWindow(), false);
 
 	var settings = {
 

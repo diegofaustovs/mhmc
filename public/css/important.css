@@ -187,7 +187,7 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
     margin: 0;
     opacity: 0.8;
     padding: 0 0 0 0;
-    width: auto;
+    width: 100%;
 }
 
 .row{
