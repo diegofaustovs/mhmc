@@ -8,7 +8,7 @@
     <div id="page-wrapper">
 
 
-        <div id="header">
+        <div class="header">
             @include('header')
         </div>
         <!-- Features -->
@@ -16,8 +16,10 @@
 
             <section class="container special">
                 <header>
-                    <h2 class="titulo">{{Lang::get('contests.title')}}</h2>
-                    <h3 id="subtitle">{{Lang::get('contests.description')}}</h3>
+                    <div class="titulo">
+                        <h2>{{Lang::get('contests.title')}}</h2>
+                    </div>
+                    <h3 class="subtitle">{{Lang::get('contests.description')}}</h3>
                 </header>
 
                 <div class="contenido">

@@ -6,6 +6,7 @@ i.icon.fa-angle-right.fa-fw{
 
 a{
     cursor: pointer;
+    border-bottom: none;
 }
 
 a:hover,
@@ -25,6 +26,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 20;
+    background-color: transparent;
 }
 
 #nav ul{
@@ -46,13 +48,11 @@ body{
     margin: 0px;
     z-index: 2;
 }
-#titulo{
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 400;
-}
-#titulo h2{
+
+.titulo h2{
     color: #1A7E45 !important;
+    font-size: 2.85em;
+    margin: 0;
 }
 
 .titulo {
@@ -67,6 +67,10 @@ body{
     background: url(../images/Footer.png) no-repeat;
     background-size: cover;
     position: static;
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 30%;*/
 }
 
 .carousel .backward:before, .carousel .forward:before{
@@ -78,26 +82,12 @@ body{
     background:#1A7E45;
 }
 
-#parrafo{
-    margin: 50px;
-}
-
-#parrafo p{
-    text-align: center;
-}
-
-#integrantes ul{
-    text-justify: auto;
-    margin: 1em 1em 1em 1em;
-    list-style: cjk-ideographic;
-}
-
-h3#subtitle {
-    margin: 2em 0 0 0;
+h3.subtitle {
+    margin: 1em 0 0 0;
     font-weight: 100;
     font-style: italic;
     color: #999999;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 h4 {
@@ -152,7 +142,7 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
 #youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 
 .logo{
-    margin-top: 40px;
+    opacity: 1;
 }
 
 .video-wrapper {
@@ -209,7 +199,7 @@ p.patro3{
 }
 
 .contenido{
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 }
 
 .wrapper.news{
@@ -230,17 +220,6 @@ article.special{
     margin-left: 9%;
     margin-right: 9%;
 }
-
-/*
-#what{
-    background-image: url(../images/what.jpg);
-    background-size: contain;
-}
-
-#who{
-    background-image: url(../images/who.jpg);
-    background-size: contain;
-}*/
 
 .green-circle {
     display: inline-block;
@@ -267,12 +246,6 @@ article.special{
     width: 1.5em;
 }
 
-#banner, #banner .contenido.container.special{
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-}
-
 #infowhat, #infowhat .titulo{
     color: #fff;
 }
@@ -288,7 +261,7 @@ iframe #facebook a{
 }
 
 .infowhat1{
-    background-image: url(../images/16-2.jpg);
+    background-image: url(../images/16.jpg);
     z-index:2;
     position: absolute;
     background-size: cover;
@@ -298,7 +271,7 @@ iframe #facebook a{
     opacity: 1;
 }
 .infowhat2{
-    background-image: url(../images/16.jpg);
+    background-image: url(../images/16-2.jpg);
     position: absolute;
     z-index:3;
     background-size: cover;
@@ -318,6 +291,11 @@ iframe #facebook a{
 
 #infowhat3 header h2.titulo{
     margin-top: 20% !important;
+}
+
+/* Cambios al main_parallax */
+section.homeSlide{
+    margin-bottom: 0;
 }
 
 .carousel-img{
