@@ -63,6 +63,7 @@
             url = window.location.href;
             aux = url.split('/');
             str = "{{route('index')}}";
+            str = str.substring(0,str.length - 2);
 
             if (aux[3] != lang)
             {
