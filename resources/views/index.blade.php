@@ -62,7 +62,7 @@
         {
             url = window.location.href;
             aux = url.split('/');
-            str = "http://mhmc/";
+            str = "{{route('index')}}";
 
             if (aux[3] != lang)
             {
