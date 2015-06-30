@@ -21,6 +21,7 @@ Route::get('/', ['as'=>'index', 'uses'=>'StaticController@index']);
  * Teams
  */
 
+Route::get('/environmental', ['as'=>'environmental', 'uses'=>'StaticController@environmental']);
 Route::get('/management', ['as'=>'management', 'uses'=>'StaticController@management']);
 Route::get('/architecture', ['as'=>'architecture', 'uses'=>'StaticController@architecture']);
 Route::get('/civil', ['as'=>'civil', 'uses'=>'StaticController@civil']);
