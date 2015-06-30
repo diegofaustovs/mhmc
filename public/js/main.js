@@ -43,10 +43,8 @@
 
             // Init Skrollr
             var s = skrollr.init({
-                forceHeight: false,
-                keyframe: function(element, name, direction) {
-                    $(element).trigger(name, [direction]);
-                }
+                forceHeight: false
+
             });
 
             // Resize our slides
