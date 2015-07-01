@@ -3,7 +3,7 @@
 @section('content')
     {{--<body class="homepage">--}}
     {{--<div id="page-wrapper">--}}
-        <body class="loading">
+        <body id="skrollr-body" class="loading">
 
         <div id="preload">
             <img src="images/header.jpg">
