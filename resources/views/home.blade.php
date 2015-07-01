@@ -3,7 +3,8 @@
 @section('content')
     {{--<body class="homepage">--}}
     {{--<div id="page-wrapper">--}}
-        <body id="skrollr-body" class="loading">
+        <body class="loading">
+
 
         <div id="preload">
             <img src="images/header.jpg">
@@ -69,6 +70,8 @@
                 {{--</footer>--}}
             {{--</div>--}}
         {{--</section>--}}
+
+        <div id="skrollr-body">
 
         <section id="slide-1" class="homeSlide">
             <div class="bcg"
@@ -164,6 +167,8 @@
 
                 </div>
             </section>
+
+            </div>
             </main>
 
         {{--<section id="banner" class="banner">--}}
