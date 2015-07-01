@@ -256,7 +256,7 @@ main {
    ========================================================================== */
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 737px) {
+@media only screen and (min-width: 740px) {
 
     body, html {
         height: auto;
@@ -270,7 +270,7 @@ main {
         width: 100%;
     }
     section.homeSlide {
-        min-width: 737px;
+        min-width: 740px;
     }
     .hsContainer {
         width: 100%;
@@ -280,7 +280,7 @@ main {
     }
     .hsContent {
         /*margin-top: 7em;*/
-        max-width: 737px;
+        max-width: 740px;
         /*position: absolute;*/
         /*left: 50%;*/
         /*top: 50%;*/

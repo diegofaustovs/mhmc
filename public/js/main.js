@@ -39,13 +39,14 @@
         }
 
 
-        if( winW >= 736) {
+        if( winW >= 740) {
 
             // Init Skrollr
             var s = skrollr.init({
                 forceHeight: false
 
             });
+
 
             // Resize our slides
             $slide.height(winH);
@@ -88,7 +89,7 @@
         };
     }
 
-    enquire.register("screen and (min-width : 736px)", initAdjustWindow(), false);
+    enquire.register("screen and (min-width : 740px)", initAdjustWindow(), false);
 
 	var settings = {
 
@@ -108,7 +109,7 @@
 		normal: '(max-width: 1280px)',
 		narrow: '(max-width: 960px)',
 		narrower: '(max-width: 840px)',
-		mobile: '(max-width: 736px)'
+		mobile: '(max-width: 740px)'
 	});
 
 	$(function() {
