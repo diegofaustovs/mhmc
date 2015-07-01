@@ -147,7 +147,7 @@
                     </div>
                 </div>
 
-            </div>
+            {{--</div>--}}
         </section>
 
             <section id="slide-5" class="homeSlide">

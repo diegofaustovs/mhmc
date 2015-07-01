@@ -43,7 +43,8 @@
 
             // Init Skrollr
             var s = skrollr.init({
-                forceHeight: false
+                forceHeight: false,
+                smoothScrolling: false
 
             });
 
@@ -52,6 +53,7 @@
             $slide.height(winH);
 
             s.refresh($('.homeSlide'));
+
 
 
         } else {
