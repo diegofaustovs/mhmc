@@ -256,7 +256,7 @@ main {
    ========================================================================== */
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-device-width: 740px) and (min-device-height: 800px){
+@media only screen and (min-width: 1200px) and (min-height: 500px){
 
     body, html {
         height: auto;
