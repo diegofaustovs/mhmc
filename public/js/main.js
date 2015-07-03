@@ -65,7 +65,7 @@
 
         }
 
-        if(Modernizr.touch && winW < 740) {
+        if(Modernizr.touch) {
 
             // Init Skrollr
             var s = skrollr.init();
