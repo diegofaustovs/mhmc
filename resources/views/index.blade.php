@@ -97,6 +97,10 @@
 <script src="{{ asset('/js/imagesloaded.js') }}"></script>
 <script src="{{ asset('/js/enquire.min.js') }}"></script>
 <script src="{{ asset('/js/skrollr.js') }}"></script>
+<!--[if lt IE 9]>
+<script src="{{ asset('/js/skrollr.ie.min.js') }}></script>
+<script src="{{ asset('/js/ie/html5shiv.js') }}"></script>
+<![endif]-->
 <script src="{{ asset('/js/main.js') }}"></script>
 
 
