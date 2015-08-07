@@ -63,14 +63,18 @@ body{
 }
 
 #footer{
-    padding: 1em 2em 2em 2em;
+    padding: 2em 2em 1em 2em;
     background: url(../images/Footer.png) no-repeat;
+<<<<<<< HEAD
     background-size: cover;
     position: static;
     /*bottom: 0;*/
     /*left: 0;*/
     /*width: 100%;*/
     /*height: 30%;*/
+=======
+    background-size: 100%;
+>>>>>>> parent of 94d82e1... Cambios en CSS y Parallax agregado
 }
 
 .carousel .backward:before, .carousel .forward:before{
@@ -238,6 +242,7 @@ article.special{
 
 .green-circle i {
     margin-top: 23px;
+<<<<<<< HEAD
 }
 
 #header{
@@ -329,4 +334,6 @@ section.homeSlide{
     width: 100%;
     height: auto;
     max-width: 100%;
+=======
+>>>>>>> parent of 94d82e1... Cambios en CSS y Parallax agregado
 }

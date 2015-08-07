@@ -94,6 +94,7 @@
 <script src="{{ asset('/js/skel.min.js') }}"></script>
 <script src="{{ asset('/js/util.js') }}"></script>
 <!--[if lte IE 8]><script src="{{ asset('/js/ie/respond.min.js') }}"></script><![endif]-->
+<<<<<<< HEAD
 <script src="{{ asset('/js/imagesloaded.js') }}"></script>
 <script src="{{ asset('/js/enquire.min.js') }}"></script>
 <script src="{{ asset('/js/skrollr.js') }}"></script>
@@ -101,6 +102,8 @@
 <script src="{{ asset('/js/skrollr.ie.min.js') }}></script>
 <script src="{{ asset('/js/ie/html5shiv.js') }}"></script>
 <![endif]-->
+=======
+>>>>>>> parent of 94d82e1... Cambios en CSS y Parallax agregado
 <script src="{{ asset('/js/main.js') }}"></script>
 
 

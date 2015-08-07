@@ -1,9 +1,24 @@
 @extends('index')
 
 @section('content')
+<<<<<<< HEAD
     {{--<body class="homepage">--}}
     {{--<div id="page-wrapper">--}}
         <body class="loading">
+=======
+    <body class="homepage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Inner -->
+            <div class="inner">
+                <image class="logo" src="../images/logohome.png"></image>
+                <footer>
+                    <a href="#banner"><i class="logo fa fa-angle-down fa-5x"></i></a>
+                </footer>
+>>>>>>> parent of 94d82e1... Cambios en CSS y Parallax agregado
 
 
         <div id="preload">
@@ -32,6 +47,18 @@
 
             {{--</div>--}}
 
+<<<<<<< HEAD
+=======
+        <section id="banner" class="banner">
+            <header>
+                <div class="contenido container special">
+                    <div class="youtube-container">
+                        <div class="youtube-player" data-id="UeudLPSdpdA"></div>
+                    </div>
+                    {{--<div class="youtube-container">--}}
+                    {{--<div class="youtube-player" data-id="PUtkGRQzXVs"></div>--}}
+                    {{--</div>--}}
+>>>>>>> parent of 94d82e1... Cambios en CSS y Parallax agregado
 
             @include('header')
 

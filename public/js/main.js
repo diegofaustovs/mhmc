@@ -6,6 +6,7 @@
 
 (function($) {
 
+<<<<<<< HEAD
     // Setup variables
     var $window = $(window);
     var $slide = $('.homeSlide');
@@ -93,6 +94,8 @@
 
     enquire.register("screen and (min-width : 740px)", initAdjustWindow(), false);
 
+=======
+>>>>>>> parent of 94d82e1... Cambios en CSS y Parallax agregado
 	var settings = {
 
 		// Carousels
@@ -100,11 +103,9 @@
 				speed: 4,
 				fadeIn: true,
 				fadeDelay: 250
-			}
+			},
 
 	};
-
-
 
 	skel.breakpoints({
 		wide: '(max-width: 1680px)',
@@ -118,8 +119,6 @@
 
 		var	$window = $(window),
 			$body = $('body');
-
-
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
